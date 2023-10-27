@@ -1,7 +1,14 @@
 /** @type { import('@storybook/web-components').Preview } */
 
+import '../storybook.css';
+
 import init from '../dist/storybook';
-init();
+window.bevy_init_done = false;
+await init()
+  .then(() => {
+    console.log("wasm init done");
+    window.bevy_init_done = true;
+  });
 
 const preview = {
   parameters: {

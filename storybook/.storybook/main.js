@@ -9,5 +9,8 @@ const config = {
   docs: {
     autodocs: "tag",
   },
+  staticDirs: [
+    '../dist',
+  ]
 };
 export default config;

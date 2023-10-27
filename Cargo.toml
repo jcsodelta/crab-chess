@@ -4,5 +4,6 @@ resolver = "2"
 
 members = [
     "./storybook",
-    "./ui-components-sycamore"
+    "./ui-components-sycamore",
+    "./ui-components-bevy",
 ]

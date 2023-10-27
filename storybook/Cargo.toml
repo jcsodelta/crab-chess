@@ -6,9 +6,17 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bevy = { version = "0.11.3", features = [
+    "bevy_asset",
+    "bevy_scene",
+    "bevy_render",
+    "bevy_core_pipeline",
+    "bevy_sprite",
+    "bevy_text",
+] }
 sycamore = "0.8.2"
 ui-components-sycamore = { path = "../ui-components-sycamore" }
 wasm-bindgen = "0.2.87"
-web-sys = { verson = "0.3.64", features = [
-    "Node"
-]}
+web-sys = { version = "0.3.64", features = ["Node"] }
+ui-components-bevy = { path = "../ui-components-bevy" }
+console_error_panic_hook = "0.1.7"
