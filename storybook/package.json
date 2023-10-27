@@ -1,0 +1,26 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "Joao Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.2",
+    "@storybook/addon-essentials": "^7.5.1",
+    "@storybook/addon-links": "^7.5.1",
+    "@storybook/blocks": "^7.5.1",
+    "@storybook/web-components": "^7.5.1",
+    "@storybook/web-components-webpack5": "^7.5.1",
+    "lit": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.5.1"
+  }
+}
